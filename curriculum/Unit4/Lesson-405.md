@@ -78,8 +78,7 @@ physical space, so make sure that all groups are working along with their array 
    for (int j = 0; j < metroCardRides.length – 1; j++) {
        metroCardRides[j] = metroCardRides[j + 1];
    }
-   ```
-
+   ``
    If students use metroCardRides.length instead of metroCardRides.length – 1, walk through the loop
    on your array whiteboard, demonstrating that metroCardRides.length causes Java to run off the end
    of the loop since there is no element at index 5. Alternatively, remind students about zero
@@ -127,7 +126,7 @@ physical space, so make sure that all groups are working along with their array 
    ``` Java
    public static void firstToLastRight (int[] metroCardRides) {
        int last = metroCardRides[metroCardRides.length – 1];
-       for (int j = metroCardRides.length – 1; j >= 1; j++) {
+       for (int j = metroCardRides.length – 1; j >= 1; j--) {
            metroCardRides[j] = metroCardRides[j – 1];
        }
        metroCardRides[0] = last;
